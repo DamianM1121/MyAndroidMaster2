@@ -1,0 +1,186 @@
+<resources>
+    <!--Pantalla nuevo gasto-->
+    <string name="ng_titulo">Nuevo gasto</string>
+    <string name="ng_pagado">Pagado</string>
+    <string name="ng_deuda">Deuda</string>
+    <string name="ng_categoria_gasto">Categoría del gasto</string>
+    <string name="ng_selecciona_opcion">Selecciona una opción</string>
+    <string name="ng_valor">Valor</string>
+    <string name="ng_valor_total">Valor total:</string>
+    <string name="ng_valor_hilt">Dar un valor para continuar</string>
+    <string name="ng_total">$0</string>
+    <string name="ng_concepto">Concepto</string>
+    <string name="ng_concepto_hilt">Dar un nombre a este gasto</string>
+    <string name="ng_placeholder_concepto">Dar un nombre a este gasto</string>
+    <string name="ng_metodo_pago">Método de pago</string>
+    <string name="ng_efectivo">Efectivo</string>
+    <string name="ng_fecha_gasto">Fecha del gasto</string>
+    <string name="ng_seleccionar_fecha">Seleccionar fecha</string>
+    <string name="ng_guardar_cambios">GUARDAR CAMBIOS</string>
+
+    <!--Pantalla de ventas-->
+    <!-- Toolbar -->
+    <string name="ventas_titulo_toolbar">Nueva Venta</string>
+    <string name="ventas_btn_regresar">Regresar</string>
+
+    <!-- SearchView -->
+    <string name="ventas_hint_buscar_productos">Buscar productos...</string>
+
+    <!-- Botón Ordenar -->
+    <string name="ventas_btn_ordenar">Ordenar</string>
+
+    <!-- Agregar Cliente -->
+    <string name="ventas_texto_agregar_cliente">Agregar cliente:</string>
+    <string name="ventas_btn_seleccionar">Seleccionar</string>
+
+    <!-- Total de la Compra -->
+    <string name="ventas_texto_total">Total:</string>
+    <string name="ventas_precio_default">$0.00</string>
+    <!--Pantalla Stock-->
+
+
+    <!-- Toolbar -->
+    <string name="stock_titulo_toolbar">Stock</string>
+    <string name="stock_btn_info">Información</string>
+
+    <!-- Tarjetas de inventario -->
+    <string name="stock_cantidad_productos">Cantidad de Productos</string>
+    <string name="stock_costo_total">Costo Total</string>
+
+    <!-- SearchView -->
+    <string name="stock_hint_buscar">Buscar...</string>
+
+    <!-- Botón de Registro -->
+    <string name="stock_btn_registro">Registrar</string>
+
+    <!-- Botón de Categorías -->
+    <string name="stock_btn_editar_categorias">Editar Categorías</string>
+
+    <!-- Botón Cargar Producto -->
+    <string name="stock_btn_cargar_producto">Cargar Producto</string>
+
+    <!-- Navegación inferior -->
+    <string name="stock_btn_menu">Menú</string>
+    <string name="stock_btn_inventario">Inventario</string>
+    <string name="stock_btn_configuraciones">Configuraciones</string>
+
+<!--Pantalla Deudas-->
+
+    <!-- Iconos y descripciones -->
+    <string name="deudas_consulta_content_description">Consulta</string>
+    <string name="deudas_descargar_comprobante_content_description">Descargar Comprobante</string>
+
+    <!-- Tarjetas de "Por Cobrar" y "Por Pagar" -->
+    <string name="deudas_por_cobrar_titulo">Por cobrar</string>
+    <string name="deudas_por_cobrar_valor">$0</string>
+    <string name="deudas_por_cobrar_cliente">Cliente: 0</string>
+    <string name="deudas_por_pagar_titulo">Por pagar</string>
+    <string name="deudas_por_pagar_valor">$0</string>
+    <string name="deudas_por_pagar_proveedor">Proveedor: 0</string>
+
+    <!-- Botones de venta y gasto -->
+    <string name="deudas_btn_nueva_venta">(+) Nueva Venta</string>
+    <string name="deudas_btn_nuevo_gasto">(-) Nuevo Gasto</string>
+
+    <!-- Navegación inferior -->
+    <string name="deudas_nav_balance">Balance</string>
+    <string name="deudas_nav_deudas">Deudas</string>
+    <string name="deudas_nav_inventario">Inventario</string>
+
+<!--Dashboard-->
+    <!-- Search y Configuraciones -->
+    <string name="dashboard_search_content_description">Buscar</string>
+    <string name="dashboard_settings_content_description">Configuraciones</string>
+
+    <!-- Meses y Botón Calendario -->
+    <string name="dashboard_calendar_button">Abrir Calendario</string>
+
+    <!-- Balance -->
+    <string name="dashboard_balance_title">Balance</string>
+    <string name="dashboard_balance_value">$0</string>
+
+    <!-- Ingresos y Egresos -->
+    <string name="dashboard_income_title">Ingresos</string>
+    <string name="dashboard_income_value">$0</string>
+    <string name="dashboard_expense_title">Egresos</string>
+    <string name="dashboard_expense_value">- $0</string>
+
+    <!-- Botones de Ingresos y Egresos -->
+    <string name="dashboard_button_income">Ingresos</string>
+    <string name="dashboard_button_expense">Egresos</string>
+
+    <!-- Botones flotantes -->
+    <string name="dashboard_new_sale">(+) Nueva venta</string>
+    <string name="dashboard_new_expense">(-) Nuevo gasto</string>
+
+    <!-- Barra de Navegación Inferior -->
+    <string name="dashboard_nav_balance">Balance</string>
+    <string name="dashboard_nav_debts">Deudas</string>
+    <string name="dashboard_nav_inventory">Inventario</string>
+
+<!--Dialogo Cliente-->
+    <!-- Campos de texto (EditText) -->
+    <string name="diag_cliente_hint_nombre">Nombre del Cliente</string>
+    <string name="diag_cliente_hint_dni">DNI (opcional)</string>
+    <string name="diag_cliente_hint_telefono">Teléfono</string>
+    <string name="diag_cliente_hint_email">Email</string>
+
+    <!-- Botón de Guardar -->
+    <string name="diag_cliente_btn_guardar">Guardar</string>
+
+<!--Dialogo Metodo de Pago-->
+    <!-- Botones de Métodos de Pago -->
+    <string name="diag_metodopago_btn_efectivo">Efectivo</string>
+    <string name="diag_metodopago_btn_tarjeta">Tarjeta</string>
+    <string name="diag_metodopago_btn_transferencia">Transferencia bancaria</string>
+    <string name="diag_metodopago_btn_otro">Otro</string>
+    <string name="diag_metodopago_btn_deuda">Deuda</string>
+
+<!--Dialogo Producto-->
+    <!-- Títulos y etiquetas del formulario -->
+    <string name="dialog_producto_codigo">Código</string>
+    <string name="dialog_producto_hint_codigo">Ingrese el código</string>
+    <string name="dialog_producto_cantidad">Cantidad</string>
+    <string name="dialog_producto_nombre">Nombre del Producto</string>
+    <string name="dialog_producto_precio_unitario">Precio Unitario</string>
+    <string name="dialog_producto_costo_unitario">Costo Unitario</string>
+    <string name="dialog_producto_fecha_vencimiento">Fecha de Vencimiento</string>
+    <string name="dialog_producto_hint_fecha_vencimiento">dd/mm/yyyy</string>
+    <string name="dialog_producto_proveedor">Proveedor</string>
+    <string name="dialog_producto_categoria">Categoria</string>
+
+    <!-- Botones -->
+    <string name="dialog_producto_btn_guardar">Guardar</string>
+    <string name="dialog_producto_btn_sumar">+</string>
+    <string name="dialog_producto_btn_restar">-</string>
+
+<!-- Item balance -->
+    <string name="item_balance_concepto">Concepto</string>
+    <string name="item_balance_metodo_pago">Método de Pago</string>
+    <string name="item_balance_fecha_transaccion">Fecha de Transacción</string>
+    <string name="item_balance_total">Total $0</string>
+    <string name="item_balance_estado_transaccion">Estado</string>
+
+<!--Item Categoria Gastos-->
+    <string name="item_categories_gastos_servicio_publico">Servicio público</string>
+    <string name="item_categories_gastos_productos_insumos">Productos e insumos</string>
+    <string name="item_categories_gastos_inmuebles">Inmuebles</string>
+    <string name="item_categories_gastos_nomina">Nomina</string>
+    <string name="item_categories_gastos_gastos_administrativos">Gastos administrativos</string>
+    <string name="item_categories_gastos_mercadeo_publicidad">Mercadeo y publicidad</string>
+    <string name="item_categories_gastos_transporte_domicilio_logistica">Transporte, domicilio y logística</string>
+    <string name="item_categories_gastos_mantenimiento_reparaciones">Mantenimiento y reparaciones</string>
+    <string name="item_categories_gastos_muebles_equipo_maquinaria">Muebles, equipo o maquinaria</string>
+    <string name="item_categories_gastos_varios">Varios</string>
+
+<!--Item new producto-->
+    <string name="item_new_producto_nombre">Nombre Producto</string>
+    <string name="item_new_producto_preciounitario">Precio unitario $</string>
+    <string name="item_new_producto_cantidad">Cantidad disponible</string>
+
+
+<!--Item Producto venta-->
+    <string name="item_producto_venta_nombre_producto">Nombre del Producto</string>
+    <string name="item_producto_venta_precio_producto">Precio: $0.00</string>
+    <string name="item_producto_venta_cantidad">Cantidad disponible: 0</string>
+</resources>

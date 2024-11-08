@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id("com.google.dagger.hilt.android")
+
+}
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+    }
+}
+
+android {
+    namespace 'com.aristidevs.androidmaster'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.aristidevs.androidmaster"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    viewBinding {
+        enable = true
+    }
+}
+
+dependencies {
+
+    // AndroidX Libraries
+    implementation 'androidx.core:core-ktx:1.10.1' // Extensiones Kotlin para la biblioteca core de Android
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Compatibilidad con versiones anteriores de Android
+    implementation 'com.google.android.material:material:1.10.0' // Componentes de diseño de Material
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Layouts flexibles y eficientes
+
+// Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0" // Cliente HTTP para servicios web
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0" // Conversor de JSON a objetos Kotlin usando Gson
+
+// Picasso
+    implementation 'com.squareup.picasso:picasso:2.8' // Biblioteca para cargar imágenes desde la web
+
+// Hilt para inyección de dependencias
+    implementation "com.google.dagger:hilt-android:2.44"
+    implementation 'androidx.activity:activity:1.9.3'// Implementación de Dagger para Hilt
+    kapt "com.google.dagger:hilt-android-compiler:2.44" // Compilador de Hilt para generación de código
+
+// Room para base de datos local
+    implementation "androidx.room:room-ktx:2.5.1" // Extensiones Kotlin para Room
+    kapt "androidx.room:room-compiler:2.5.1" // Compilador de Room para generar código necesario
+
+// DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0" // Almacenamiento de preferencias basado en DataStore
+
+// Coroutines para programación asincrónica
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4" // Soporte de corutinas para Android
+
+// LiveData y ViewModel para arquitectura MVVM
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1" // LiveData con extensiones Kotlin
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1" // ViewModel con extensiones Kotlin
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1" // Ciclo de vida con extensiones Kotlin
+
+//  Navigation Component
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
+
+// Dependencias para pruebas
+    testImplementation 'junit:junit:4.13.2' // Framework de pruebas para Java
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5' // Extensiones de JUnit para pruebas de Android
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1' // Framework para pruebas de UI en Android
+
+
+
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/dashboardActivity">
+
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="ProyectoFinal.ui.activities.DashboardActivity"
+        android:label="Dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_deudas"
+            app:destination="@id/deudasActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+        <action
+            android:id="@+id/action_dashboard_to_stock"
+            app:destination="@id/stockActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </activity>
+
+    <activity
+        android:id="@+id/deudasActivity"
+        android:name="ProyectoFinal.ui.activities.DeudasActivity"
+        android:label="Deudas">
+        <action
+            android:id="@+id/action_deudas_to_dashboard"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_deudas_to_stock"
+            app:destination="@id/stockActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </activity>
+
+    <activity
+        android:id="@+id/stockActivity"
+        android:name="ProyectoFinal.ui.activities.StockActivity"
+        android:label="Inventario">
+        <action
+            android:id="@+id/action_stock_to_dashboard"
+            app:destination="@id/dashboardActivity"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_stock_to_deudas"
+            app:destination="@id/deudasActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </activity>
+</navigation>

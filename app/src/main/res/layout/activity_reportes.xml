@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar con título de reportes -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Reportes"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp" />
+
+        <!-- Selector de fechas para generar reportes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desde:" />
+
+            <Button
+                android:id="@+id/btnFechaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar Fecha" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasta:" />
+
+            <Button
+                android:id="@+id/btnFechaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccionar Fecha" />
+        </LinearLayout>
+
+        <!-- Botón para generar el reporte -->
+        <Button
+            android:id="@+id/btnGenerarReporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generar Reporte" />
+    </LinearLayout>
+</ScrollView>

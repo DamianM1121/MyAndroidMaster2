@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:background="#99DDDDDD"
+            android:paddingVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diag_cliente_hint_nombre" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <EditText
+            android:id="@+id/etApellido"
+            android:background="#99DDDDDD"
+            android:paddingVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diag_cliente_hint_dni" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <EditText
+            android:id="@+id/etTelefono"
+            android:background="#99DDDDDD"
+            android:paddingVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diag_cliente_hint_telefono" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:background="#99DDDDDD"
+            android:paddingVertical="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diag_cliente_hint_email" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="@string/diag_cliente_btn_guardar" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
