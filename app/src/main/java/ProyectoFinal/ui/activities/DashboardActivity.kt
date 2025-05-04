@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.aristidevs.androidmaster.R
 import com.aristidevs.androidmaster.databinding.ActivityDashboardBinding
 
-//
+
 class DashboardActivity : AppCompatActivity() {
 
     //    Se habilita el binding
