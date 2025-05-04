@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.aristidevs.androidmaster.R
 import com.aristidevs.androidmaster.databinding.ActivityDashboardBinding
-import com.aristidevs.androidmaster.databinding.ActivityDetailSuperheroBinding
+
 
 class DashboardActivity : AppCompatActivity() {
 
