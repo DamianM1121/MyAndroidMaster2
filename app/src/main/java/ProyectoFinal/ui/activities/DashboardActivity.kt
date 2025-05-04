@@ -44,7 +44,7 @@ class DashboardActivity : AppCompatActivity() {
 
         }
     }
-
+    //hola inventario !(-.0.-)!
     private fun navigateToInventario() {
 
         // Configurar el botón para navegar a stockActivity
