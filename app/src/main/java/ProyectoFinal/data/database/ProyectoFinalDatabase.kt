@@ -12,13 +12,10 @@ import ProyectoFinal.data.database.entities.Proveedor
 import ProyectoFinal.data.database.entities.Venta
 import ProyectoFinal.utils.DateUtil
 import android.content.Context
-import android.text.format.DateUtils
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.TypeConverter
 import androidx.room.TypeConverters
-import com.bewolf1121.androiddamster.activity1.superHeoresApp.superHeroHistory.SuperHeroDB.SuperHeroDataConverter.DateConverter
 
 // Clase Database con varias entidades
 @Database(

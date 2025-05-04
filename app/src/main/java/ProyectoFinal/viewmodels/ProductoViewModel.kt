@@ -55,8 +55,8 @@ class ProductoViewModel@Inject constructor(
 
     fun getProductoByCategory(category: String): LiveData<List<Producto>> = liveData {
         Log.d("ProductoViewModel", "Buscando producto con ID (String): $category")
-        val productosPorCategoria = repository.obtenerProductoPorCategoria(category)
-        emit(productosPorCategoria)
+//        val productosPorCategoria = repository.obtenerProductoPorCategoria(category)
+//        emit(productosPorCategoria)
     }
 
     fun actualizarProducto(producto: Producto) {
@@ -73,14 +73,14 @@ class ProductoViewModel@Inject constructor(
         }
     }
 
-    fun setCategory(category: String) {
-        val productosLiveData = getProductosByCategory(category)
-        _productosPorCategoriaLiveData.addSource(productosLiveData) { productos ->
-            _productosPorCategoriaLiveData.value = productos
-            // Puedes eliminar la fuente una vez que los datos se obtengan, para evitar actualizaciones redundantes:
-            _productosPorCategoriaLiveData.removeSource(productosLiveData)
-        }
-    }
+//    fun setCategory(category: String) {
+//        val productosLiveData = getProductosByCategory(category)
+//        _productosPorCategoriaLiveData.addSource(productosLiveData) { productos ->
+//            _productosPorCategoriaLiveData.value = productos
+//            // Puedes eliminar la fuente una vez que los datos se obtengan, para evitar actualizaciones redundantes:
+//            _productosPorCategoriaLiveData.removeSource(productosLiveData)
+//        }
+//    }
 
     val productos: LiveData<List<Producto>> = repository.obtenerTodosLosProductos().asLiveData()
 }

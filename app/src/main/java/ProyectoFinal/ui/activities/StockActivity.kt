@@ -50,9 +50,9 @@ class StockActivity : AppCompatActivity(), ProductoAdapter.OnProductoClickListen
         viewModel.costoTotalLiveData.observe(this) { total ->
             binding.tvCostoTotal.text = "$$total"
         }
-        viewModel.categoriasLiveData.observe(this) { categorias ->
-            categoriaAdapter.submitList(categorias)
-        }
+//        viewModel.dcategoriasLiveData.observe(this) { categorias ->
+//            categoriaAdapter.submitList(categorias)
+//        }
 
         // Configura RecyclerView
         setupRecyclerView()
