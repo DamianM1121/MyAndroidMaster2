@@ -14,7 +14,7 @@ class DashboardActivity : AppCompatActivity() {
 
     //    Se habilita el binding
     private lateinit var binding: ActivityDashboardBinding
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
